@@ -1,20 +1,78 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# AdmitGuard v2
 
-# Run and deploy your AI Studio app
+## Overview
 
-This contains everything you need to run your app locally.
+AdmitGuard v2 is an AI-assisted admission validation and decision-support system.
 
-View your app in AI Studio: https://ai.studio/apps/9a19e680-76b5-4829-a2e0-5c0e11f3437d
+It validates applicant data, detects inconsistencies, assigns a risk score, and categorizes candidates into actionable segments.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## Key Features
 
+### 1. Validation Engine
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+* Enforces correct education sequence (10th → 12th/Diploma → UG → PG)
+* Rejects invalid or incomplete data
+* Validates work experience dates
+
+### 2. Flagging System
+
+* Education gaps (>24 months)
+* Backlogs present
+* Career gaps
+* No work experience
+
+### 3. Intelligence Layer
+
+* Risk Score (0–100)
+* Categories:
+
+  * Strong Fit
+  * Needs Review
+  * Weak Fit
+* Explanation for each score component
+
+### 4. Data Storage
+
+* Stores structured applicant data in Google Sheets using Apps Script webhook
+
+---
+
+## Tech Stack
+
+* AI Platform: Google AI Studio (Gemini)
+* Backend: Node.js / TypeScript
+* Frontend: HTML, CSS, JavaScript
+* Storage: Google Sheets
+
+---
+
+## How It Works
+
+1. User fills application form
+2. Backend validates data
+3. Flags are generated
+4. Risk score is calculated
+5. Data is stored in Google Sheets
+6. Output displayed to user
+
+---
+
+## Setup Instructions
+
+1. Add your webhook URL in `.env.example`
+2. Run backend server
+3. Open frontend and submit form
+
+---
+
+## Screenshots
+
+(Add screenshots here)
+
+---
+
+## Note
+
+This project is built using AI-assisted vibe coding methodology via Google AI Studio.
