@@ -1,0 +1,5 @@
+{
+  "name": "AdmitGuard v2",
+  "description": "An admission validation and intelligence platform for Indian education pathways, featuring rule-based scoring and Google Sheets integration.",
+  "requestFramePermissions": []
+}
